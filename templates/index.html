@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2 class="mb-4 text-center">Welcome to Student Feedback Portal</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <img src="/static/college.jpg" class="card-img-top" alt="College Image">
+                <div class="card-body">
+                    <h5 class="card-title">Vinay Institute of Technology</h5>
+                    <p class="card-text">
+                        Vinay Institute is a premier institution known for excellence
+                        in education, innovation, and student development.
+                        We focus on holistic growth, technical training, and practical exposure.
+                    </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item">Modern labs & infrastructure</li>
+                        <li class="list-group-item">Experienced faculty</li>
+                        <li class="list-group-item">Industry-ready curriculum</li>
+                        <li class="list-group-item">Placement assistance</li>
+                        <li class="list-group-item">Regular workshops & seminars</li>
+                    </ul>
+                    <a href="/feedback" class="btn btn-primary">Submit Feedback</a>
+                    <a href="/admin" class="btn btn-secondary">Admin Panel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
